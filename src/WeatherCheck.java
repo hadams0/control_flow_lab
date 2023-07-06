@@ -5,13 +5,13 @@ public class WeatherCheck {
         boolean currentlyRaining = false;
 
         if (temperature <= 15 && currentlyRaining) {
-            System.out.println("You should wear a raincoat!");
+            System.out.println("Today it is cold and you should wear a raincoat!");
         } else if (temperature > 15 && currentlyRaining) {
-            System.out.println("You might need an umbrella!");
+            System.out.println("Today it is hot but you might need an umbrella!");
         } else if (temperature > 15 && !currentlyRaining) {
-            System.out.println("You should wear sunscreen!");
+            System.out.println("Today is hot, you should wear sunscreen!");
         } else if (temperature <= 15 && !currentlyRaining) {
-            System.out.println("You should wear warm clothes!");
+            System.out.println("Today it's colder so you should wear warm clothes!");
         }
     }
 }
